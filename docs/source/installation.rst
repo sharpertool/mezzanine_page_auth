@@ -71,7 +71,7 @@ follows::
             "mezzanine.pages.models.Page.groups",
             "ManyToManyField",
             ("auth.Group",),
-            {"blank": True, "null": True, "verbose_name": 'groups',
+            {"blank": True, "verbose_name": 'groups',
              'symmetrical': False, 'through': "mezzanine_page_auth.PageAuthGroup"},
         ),
         # ...

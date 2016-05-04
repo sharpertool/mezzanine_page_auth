@@ -21,7 +21,7 @@ class PageAuthGroup(models.Model):
         unique_together = ("page", "group")
 
     def __str__(self):
-        return u"{}: {} has {}".format(self._meta.module_name, self.group.name,
+        return u"{}: {} has {}".format(self._meta.model_name, self.group.name,
                                        self.page)
 
     @classmethod
